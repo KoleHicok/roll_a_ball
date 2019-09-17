@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class PlayerController : MonoBehaviour
+public class KarsonPlayerController : MonoBehaviour
 {
     private Rigidbody rb;
     private int score;
