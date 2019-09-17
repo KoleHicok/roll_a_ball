@@ -6,6 +6,6 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/_Scenes/minigame.unity
+    path: Assets/_Scenes/KoleScene.unity
     guid: a5c9e5087702a6c468da27849a21f335
   m_configObjects: {}
