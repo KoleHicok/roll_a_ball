@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CameraController : MonoBehaviour
+public class KoleCameraController : MonoBehaviour
 {
     public GameObject player;
 

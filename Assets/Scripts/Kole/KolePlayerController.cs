@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-public class PlayerController : MonoBehaviour
+public class KolePlayerController : MonoBehaviour
 {
     public float speed;
     public Text countText;
