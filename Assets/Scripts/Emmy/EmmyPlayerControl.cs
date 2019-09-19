@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class EmmyPlayerControl : MonoBehaviour
 {
@@ -40,6 +41,7 @@ public class EmmyPlayerControl : MonoBehaviour
         if(count >= 12)
         {
             winText.text = "You Win!";
+            SceneManager.LoadSceneAsync("BrettScene");
         }
     }
 
