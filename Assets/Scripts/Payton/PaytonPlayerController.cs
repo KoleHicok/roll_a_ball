@@ -38,7 +38,7 @@ public class PaytonPlayerController : MonoBehaviour
             other.gameObject.SetActive(false);
             count++;
             SetCountText();
-            if (count >= 13)
+            if (count >= 1)
             {
                 winText.text = "You win!";
                 SceneManager.LoadSceneAsync("Minigame");
