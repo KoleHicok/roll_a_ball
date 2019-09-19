@@ -41,7 +41,7 @@ public class PaytonPlayerController : MonoBehaviour
             if (count >= 1)
             {
                 winText.text = "You win!";
-                SceneManager.LoadSceneAsync("Minigame");
+                Invoke("ChangeScene", 2f);
             }
         }
     }
@@ -49,5 +49,10 @@ public class PaytonPlayerController : MonoBehaviour
     void SetCountText()
     {
         countText.text = "Count: " + count.ToString();
+    }
+
+    void ChangeScene()
+    {
+        SceneManager.LoadSceneAsync("Minigame");
     }
 }
