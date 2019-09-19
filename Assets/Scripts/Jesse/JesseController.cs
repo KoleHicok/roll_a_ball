@@ -33,7 +33,7 @@ public class JesseController : MonoBehaviour
     
     void ChangeScene()
     {
-        SceneManager.LoadScene("GeorgeScene");
+        SceneManager.LoadScene("George'sScene");
     }
     void OnTriggerEnter(Collider other)
     {
