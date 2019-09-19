@@ -13,7 +13,6 @@ public class JesseController : MonoBehaviour
     private Rigidbody rb;
     private int count;
 
-    // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody>();
@@ -37,17 +36,14 @@ public class JesseController : MonoBehaviour
         if (other.gameObject.CompareTag("Pick Up"))
         {
             other.gameObject.SetActive(false);
-            count = count + 1;
+            count++;
             SetCountText();
+            if (count >= 1) winText.text = "You win!";
         }
     }
 
     void SetCountText()
     {
         countText.text = "Count: " + count.ToString();
-        if (count >= 1)
-        {
-            winText.text = "You win!";
-        }
     }
 }
