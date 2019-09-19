@@ -42,7 +42,7 @@ public class GeorgePlayerController : MonoBehaviour {
 
     void SetCountText(){
         countText.text = "Count: " + count.ToString();
-        if(count>=1){
+        if(count>=7){
             winText.text = "You Win!";
             SceneManager.LoadScene("KarsonScene");
         }
