@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class KarsonPlayerController : MonoBehaviour
 {
@@ -88,6 +89,7 @@ public class KarsonPlayerController : MonoBehaviour
         }
         else if (other.gameObject.CompareTag("Camera Switch"))
         {
+            SetWinText();
             camera1Listener.enabled = false;
             camera2.SetActive(true);
             camera2Listener.enabled = true;
