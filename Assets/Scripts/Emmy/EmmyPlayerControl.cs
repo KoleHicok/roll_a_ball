@@ -42,7 +42,7 @@ public class EmmyPlayerControl : MonoBehaviour
     void SetCountText()
     {
         countText.text = "Count: " + count.ToString();
-        if(count >= 12)
+        if(count >= 1)
         {
             winText.text = "You Win!";
             Invoke("ChangeScene", 1f);
