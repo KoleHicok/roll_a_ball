@@ -26,4 +26,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/_Scenes/Emmy/MiniGame.unity
     guid: 86f664336a99e8645b2d395fd4ba156e
+  - enabled: 1
+    path: Assets/_Scenes/George'sScene.unity
+    guid: 6341b005e9257f246a35d494fef675ff
   m_configObjects: {}
