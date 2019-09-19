@@ -10,7 +10,6 @@ public class KarsonPlayerController : MonoBehaviour
     public float speed;
     public Text countText;
     public Text winText;
-    public GameObject pointParent;
     public AudioSource deathSoundSource;
     public AudioClip deathSound;
     public AudioSource backgroundMusicSource;
@@ -38,7 +37,6 @@ public class KarsonPlayerController : MonoBehaviour
         score = 0;
         SetScore();
         winText.text = "";
-        pointParent = GameObject.FindGameObjectWithTag("Pick Up Folder");
         deathSoundSource.clip = deathSound;
         backgroundMusicSource.clip = backgroundMusic;
         backgroundMusicSource.Play();
