@@ -47,7 +47,7 @@ public class PaytonPlayerController : MonoBehaviour
             other.gameObject.SetActive(false);
             count++;
             SetCountText();
-            if (count >= 1)
+            if (count >= 13)
             {
                 winText.text = "You win!";
                 Invoke("ChangeScene", 2f);
