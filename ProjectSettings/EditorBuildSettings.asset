@@ -12,6 +12,18 @@ EditorBuildSettings:
     path: Assets/_Scenes/JesseScene.unity
     guid: 364a6742ebc784c42859ea1df638129d
   - enabled: 1
+    path: Assets/_Scenes/Emmy/MiniGame.unity
+    guid: 86f664336a99e8645b2d395fd4ba156e
+  - enabled: 1
+    path: Assets/_Scenes/BrettScene.unity
+    guid: 1d1a27f5971a5eb47af3279170312194
+  - enabled: 1
+    path: Assets/_Scenes/GeorgeScene.unity
+    guid: cd62ed0854d5557479f35d2f84a9d8cd
+  - enabled: 1
+    path: Assets/_Scenes/PaytonScene.unity
+    guid: beffac1f01672984db452cc4f0966951
+  - enabled: 1
     path: Assets/_Scenes/KarsonScene.unity
-    guid: 3ad8f41970db09542b7cbe3b6aac50eb
+    guid: 2610c77c5e8c95545acef9c721939b3b
   m_configObjects: {}
