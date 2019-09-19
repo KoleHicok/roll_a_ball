@@ -41,7 +41,7 @@ public class GeorgePlayerController : MonoBehaviour {
 
     void SetCountText(){
         countText.text = "Count: " + count.ToString();
-        if(count>=3){
+        if(count>=1){
             winText.text = "You Win!";
         }
     }
