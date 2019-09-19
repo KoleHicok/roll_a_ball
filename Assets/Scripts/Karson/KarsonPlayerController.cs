@@ -25,13 +25,13 @@ public class KarsonPlayerController : MonoBehaviour
     private void Start()
     {
         dead = false;
-        /*camera1.SetActive(true);
+        camera1.SetActive(true);
 
         camera1Listener = camera1.GetComponent<AudioListener>();
         camera2Listener = camera2.GetComponent<AudioListener>();
 
         camera2Listener.enabled = false;
-        camera2.SetActive(false);*/
+        camera2.SetActive(false);
 
         rb = GetComponent<Rigidbody>();
         score = 0;

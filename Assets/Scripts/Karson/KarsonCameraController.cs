@@ -12,6 +12,7 @@ public class KarsonCameraController : MonoBehaviour
     void Start()
     {
         offset = transform.position - player.transform.position;
+        Debug.Log(offset);
     }
 
     void LateUpdate()
