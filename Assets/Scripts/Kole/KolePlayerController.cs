@@ -48,7 +48,7 @@ public class KolePlayerController : MonoBehaviour
         if (count >= 1)
         {
             winText.text = "You win!";
-            SceneManager.LoadScene(sceneName: "KarsonScene");
+            SceneManager.LoadScene(sceneName: "PaytonScene");
         }
     }
 }
