@@ -42,8 +42,11 @@ public class JesseController : MonoBehaviour
             other.gameObject.SetActive(false);
             count++;
             SetCountText();
-            if (count >= 1) winText.text = "You win!";
-            Invoke("ChangeScene", 2f);
+            if (count >= 5)
+            {
+                winText.text = "You win!";
+                Invoke("ChangeScene", 2f);
+            }
         }
     }
 
