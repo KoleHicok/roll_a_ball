@@ -2,8 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
-public class PlayerController : MonoBehaviour
+public class JesseController : MonoBehaviour
 {
     public float speed;
     public Text countText;
@@ -12,6 +13,7 @@ public class PlayerController : MonoBehaviour
     private Rigidbody rb;
     private int count;
 
+    // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody>();
@@ -35,23 +37,17 @@ public class PlayerController : MonoBehaviour
         if (other.gameObject.CompareTag("Pick Up"))
         {
             other.gameObject.SetActive(false);
-            count += 1;
+            count = count + 1;
             SetCountText();
         }
     }
 
-    //private void OnTriggerStay(Collision collision)
-    //{
-    //    if (collision.gameObject.CompareTag("Short Ramp"))
-    //        collision.gameObject.AddForce(Vector3.up * 10);
-    //}
-
     void SetCountText()
     {
         countText.text = "Count: " + count.ToString();
-        if(count >= 13)
+        if (count >= 1)
         {
-            winText.text = "You won!";
+            winText.text = "You win!";
         }
     }
 }
