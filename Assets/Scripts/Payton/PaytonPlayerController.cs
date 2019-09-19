@@ -12,6 +12,8 @@ public class PaytonPlayerController : MonoBehaviour
 
     private Rigidbody rb;
     private int count;
+    Vector3 startingPosition;
+    Transform cachedTransform;
 
     void Start()
     {
@@ -19,6 +21,8 @@ public class PaytonPlayerController : MonoBehaviour
         count = 0;
         SetCountText();
         winText.text = "";
+        cachedTransform = transform;
+        startingPosition = cachedTransform.position;
     }
 
     void FixedUpdate()
@@ -29,6 +33,11 @@ public class PaytonPlayerController : MonoBehaviour
         Vector3 movement = new Vector3(moveHorizontal, 0.0f, moveVertical);
 
         rb.AddForce(movement * speed);
+
+        if (cachedTransform.position.y < -5)
+        {
+            cachedTransform.position = startingPosition;
+        }
     }
 
     void OnTriggerEnter(Collider other)

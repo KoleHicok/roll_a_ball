@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class GeorgePlayerController : MonoBehaviour {
 
@@ -43,6 +44,7 @@ public class GeorgePlayerController : MonoBehaviour {
         countText.text = "Count: " + count.ToString();
         if(count>=1){
             winText.text = "You Win!";
+            SceneManager.LoadScene("KarsonScene");
         }
     }
 
