@@ -2,6 +2,7 @@
 using UnityEngine.UI;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PaytonPlayerController : MonoBehaviour
 {
@@ -37,7 +38,11 @@ public class PaytonPlayerController : MonoBehaviour
             other.gameObject.SetActive(false);
             count++;
             SetCountText();
-            if (count >= 13) winText.text = "You win!";
+            if (count >= 1)
+            {
+                winText.text = "You win!";
+                SceneManager.LoadSceneAsync("Minigame");
+            }
         }
     }
 
