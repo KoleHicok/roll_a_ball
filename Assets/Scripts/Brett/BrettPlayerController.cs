@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class BrettPlayerController : MonoBehaviour
@@ -59,9 +60,10 @@ public class BrettPlayerController : MonoBehaviour
 	void SetCountText()
 	{
 		countText.text = "Count: " + count.ToString();
-		if (count >= 12)
+		if (count >= 1)
 		{
 			winText.text = "You Win!";
+			SceneManager.LoadScene(sceneName: "JesseScene");
 		}
 	}
 }

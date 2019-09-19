@@ -30,7 +30,11 @@ public class JesseController : MonoBehaviour
 
         rb.AddForce(movement * speed);
     }
-
+    
+    void ChangeScene()
+    {
+        SceneManager.LoadScene("GeorgeScene");
+    }
     void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("Pick Up"))
@@ -39,6 +43,7 @@ public class JesseController : MonoBehaviour
             count++;
             SetCountText();
             if (count >= 1) winText.text = "You win!";
+            Invoke("ChangeScene", 2f);
         }
     }
 
