@@ -13,7 +13,6 @@ public class KolePlayerController : MonoBehaviour
     private Rigidbody rb;
     private int count;
 
-    // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody>();
@@ -45,7 +44,7 @@ public class KolePlayerController : MonoBehaviour
     void SetCountText()
     {
         countText.text = "Count: " + count.ToString();
-        if (count >= 1)
+        if (count >= 12)
         {
             winText.text = "You win!";
             SceneManager.LoadScene(sceneName: "PaytonScene");
